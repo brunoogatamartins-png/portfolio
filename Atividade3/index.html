@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vozinha - Goleiro Cabo-verdiano</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .photo-section {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .photo-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .ficha-tecnica {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .ficha-tecnica h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .ficha-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .ficha-item:last-child {
+            border-bottom: none;
+        }
+
+        .ficha-item strong {
+            color: #1e3c72;
+        }
+
+        .ficha-item span {
+            color: #555;
+            font-weight: 500;
+        }
+
+        .about-section h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .about-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .career-section {
+            margin-top: 30px;
+        }
+
+        .career-section h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .career-section h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .career-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .career-section li {
+            color: #555;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .career-section li:before {
+            content: "⚽";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box p {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .stat-box strong {
+            font-size: 1.8em;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .photo-section {
+                flex: 0 0 auto;
+                max-width: 100%;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JOSIMAR JOSÉ ÉVORA DIAS</h1>
+            <p>"VOZINHA" - O Goleiro que Parou a Espanha</p>
+        </header>
+
+        <div class="content">
+            <div class="info">
+                <div class="about-section">
+                    <h2>Sobre o Jogador</h2>
+                    <p>
+                        Josimar José Évora Dias, conhecido como Vozinha, é um goleiro de Cabo Verde que alcançou fama mundial como goleiro e capitão durante a Copa do Mundo de 2026 ao parar a seleção da Espanha em um empate histórico. O apelido surgiu na infância em Mindelo, em Cabo Verde, porque ele morava com os avós. Ao jogar bola na rua, ele competia bravamente e voltava bravo para casa após sofrer pancadas, fazendo com que os amigos zombassem dizendo que ele ia reclamar com a "vozinha".
+                    </p>
+                    <p>
+                        Sua atuação na Copa do Mundo de 2026 garantiu a ele a simpatia e reconhecimento da torcida, e lhe rendeu milhões de seguidores em redes sociais.
+                    </p>
+                    <p>
+                        Defende a seleção principal desde 2012, sendo um dos atletas com mais jogos na história do país.
+                    </p>
+                </div>
+
+                <div class="career-section">
+                    <h2>Carreira nos Clubes</h2>
+                    
+                    <h3>Início</h3>
+                    <ul>
+                        <li>Começou no futebol cabo-verdiano passando pelo Batuque e pelo Mindelense.</li>
+                    </ul>
+
+                    <h3>Carreira no Exterior</h3>
+                    <ul>
+                        <li><strong>Angola:</strong> Progresso do Sambizanga</li>
+                        <li><strong>Moldávia:</strong> Zimbru Chisinau</li>
+                        <li><strong>Portugal:</strong> Gil Vicente e Chaves</li>
+                        <li><strong>Chipre:</strong> AEL Limassol</li>
+                        <li><strong>Eslováquia:</strong> AS Trencin</li>
+                        <li><strong>Chile:</strong> Colo-Colo (Clube Atual)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-section">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9szM5Ijh_5wpkl-X2lkC5DtoUDkQq7taSUI2RIByXJA&s=10" alt="Vozinha - Goleiro">
+                
+                <div class="ficha-tecnica">
+                    <h3>Ficha Técnica</h3>
+                    <div class="ficha-item">
+                        <strong>Nome Completo:</strong>
+                        <span>Josimar J. É. Dias</span>
+                    </div>
+                    <div class="ficha-item">
+                        <strong>Apelido:</strong>
+                        <span>Vozinha</span>
+                    </div>
+                    <div class="ficha-item">
+                        <strong>Posição:</strong>
+                        <span>Goleiro</span>
+                    </div>
+                    <div class="ficha-item">
+                        <strong>Nacionalidade:</strong>
+                        <span>Cabo Verde 🇨🇻</span>
+                    </div>
+                    <div class="ficha-item">
+                        <strong>Clube Atual:</strong>
+                        <span>Colo-Colo (Chile)</span>
+                    </div>
+                    <div class="ficha-item">
+                        <strong>Seleção:</strong>
+                        <span>Desde 2012</span>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <p>Aparições</p>
+                        <strong>100+</strong>
+                    </div>
+                    <div class="stat-box">
+                        <p>Selecção</p>
+                        <strong>12+ anos</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
